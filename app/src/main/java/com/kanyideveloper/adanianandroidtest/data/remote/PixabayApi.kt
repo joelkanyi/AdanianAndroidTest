@@ -9,6 +9,6 @@ interface PixabayApi {
 
     @GET("?key=$KEY")
     suspend fun searchImages(
-        @Query("q") query: String,
+        @Query("q") query: String?,
     ): List<ImageDto>
 }

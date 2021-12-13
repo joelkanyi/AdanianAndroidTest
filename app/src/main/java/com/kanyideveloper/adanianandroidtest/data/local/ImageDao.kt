@@ -10,11 +10,11 @@ import com.kanyideveloper.adanianandroidtest.domain.model.Image
 interface ImageDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertImages(images: List<Image>)
+    suspend fun insertImages(images: List<ImageEntity>)
 
     @Query("DELETE FROM imageentity WHERE previewURL IN(:images)")
     suspend fun deleteImages(images: List<String>)
 
     @Query("SELECT * FROM imageentity")
-    suspend fun getImages(name: String = "dogs")
+    suspend fun getImages(name: String?): List<ImageEntity>
 }
