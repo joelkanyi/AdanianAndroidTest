@@ -1,5 +1,6 @@
 package com.kanyideveloper.adanianandroidtest.data.remote.dto
 
+import com.kanyideveloper.adanianandroidtest.data.local.ImageEntity
 import com.kanyideveloper.adanianandroidtest.domain.model.Image
 
 data class ImageDto(
@@ -28,8 +29,8 @@ data class ImageDto(
 ){
 
     // Mapper function to map the data to our model
-    fun toImage(): Image {
-         return Image(
+    fun toImageEntity(): ImageEntity {
+         return ImageEntity(
              collections = collections,
              comments = comments,
              downloads = downloads,

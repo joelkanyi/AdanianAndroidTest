@@ -7,6 +7,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface ImageRepository {
 
-    fun getImages(name: String): Flow<Resource<List<Image>>>
+    fun getImages(name: String? = "dogs"): Flow<Resource<List<Image>>>
 
 }
