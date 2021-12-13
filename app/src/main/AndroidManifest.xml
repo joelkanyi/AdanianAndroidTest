@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdanianAndroidTest">
         <activity
-            android:name=".MainActivity"
+            android:name="com.kanyideveloper.adanianandroidtest.presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
