@@ -10,9 +10,6 @@ class GetImages(
 ) {
 
     operator fun invoke(name: String): Flow<Resource<List<Image>>>{
-        /*if (name.isBlank()){
-
-        }*/
         return repository.getImages(name)
     }
 }
