@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/imagesFragment"
         android:name="com.kanyideveloper.adanianandroidtest.presentation.images.ImagesFragment"
-        android:label="fragment_images"
-        tools:layout="@layout/fragment_images" >
+        android:label="Pixabay Images"
+        tools:layout="@layout/fragment_images">
         <action
             android:id="@+id/action_imagesFragment_to_imageDetailsFragment"
             app:destination="@id/imageDetailsFragment" />
@@ -17,9 +17,10 @@
     <fragment
         android:id="@+id/imageDetailsFragment"
         android:name="com.kanyideveloper.adanianandroidtest.presentation.image_details.ImageDetailsFragment"
-        android:label="fragment_image_details"
-        tools:layout="@layout/fragment_image_details" >
-        <argument android:name="imageDetails"
+        android:label="Image Details"
+        tools:layout="@layout/fragment_image_details">
+        <argument
+            android:name="imageDetails"
             app:argType="com.kanyideveloper.adanianandroidtest.domain.model.Image" />
     </fragment>
 </navigation>
