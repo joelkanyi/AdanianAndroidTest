@@ -13,7 +13,7 @@ import java.io.IOException
 class ImageRepositoryImpl(
     private val pixabayApi: PixabayApi,
     private val imageDao: ImageDao
-): ImageRepository {
+) : ImageRepository {
 
     override fun getImages(name: String?): Flow<Resource<List<Image>>> = flow {
 
@@ -27,20 +27,24 @@ class ImageRepositoryImpl(
 
             // Get our words anc replace them in the database
             val remoteImages = pixabayApi.searchImages(name)
-            imageDao.deleteImages(remoteImages.map { it.previewURL })
-            imageDao.insertImages(remoteImages.map { it.toImageEntity() })
+            imageDao.deleteImages(remoteImages.hits.map { it.previewURL })
+            imageDao.insertImages(remoteImages.hits.map { it.toImageEntity() })
 
-        }catch (e : HttpException){
-            emit(Resource.Error(
-                message = "Oops, something went wrong!",
-                data = images
-            ))
+        } catch (e: HttpException) {
+            emit(
+                Resource.Error(
+                    message = "Oops, something went wrong!",
+                    data = images
+                )
+            )
 
-        }catch (e: IOException){
-            emit(Resource.Error(
-                message = "Could'nt reach server, check your internet connection!",
-                data = images
-            ))
+        } catch (e: IOException) {
+            emit(
+                Resource.Error(
+                    message = "Couldn't reach server, check your internet connection!",
+                    data = images
+                )
+            )
 
         }
 

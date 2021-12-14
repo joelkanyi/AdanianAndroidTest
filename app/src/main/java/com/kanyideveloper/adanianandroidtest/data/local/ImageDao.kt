@@ -15,6 +15,6 @@ interface ImageDao {
     @Query("DELETE FROM imageentity WHERE previewURL IN(:images)")
     suspend fun deleteImages(images: List<String>)
 
-    @Query("SELECT * FROM imageentity")
-    suspend fun getImages(name: String?): List<ImageEntity>
+    @Query("SELECT * FROM imageentity WHERE tags OR previewURL OR pageURL LIKE '%' || :query || '%'")
+    suspend fun getImages(query: String?): List<ImageEntity>
 }

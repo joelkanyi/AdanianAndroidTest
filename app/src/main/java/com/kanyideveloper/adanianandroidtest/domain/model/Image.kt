@@ -1,5 +1,9 @@
 package com.kanyideveloper.adanianandroidtest.domain.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Image(
     val collections: Int,
     val comments: Int,
@@ -23,4 +27,4 @@ data class Image(
     val webformatHeight: Int,
     val webformatURL: String,
     val webformatWidth: Int
-)
+) : Parcelable
