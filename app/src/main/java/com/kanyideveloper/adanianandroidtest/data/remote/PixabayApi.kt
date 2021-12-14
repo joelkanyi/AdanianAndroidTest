@@ -8,7 +8,5 @@ import retrofit2.http.Query
 interface PixabayApi {
 
     @GET("?key=$KEY")
-    suspend fun searchImages(
-        @Query("q") query: String?,
-    ): ApiResponse
+    suspend fun searchImages(@Query("q") query: String?): ApiResponse
 }

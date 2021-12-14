@@ -29,6 +29,7 @@ data class ImageEntity(
     val webformatURL: String,
     val webformatWidth: Int
 ){
+    // Map the entity to the domain `Image` data class
     fun toImage(): Image{
         return Image(
             collections = collections,

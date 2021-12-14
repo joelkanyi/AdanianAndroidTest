@@ -56,6 +56,7 @@
         android:layout_height="wrap_content"
         android:indeterminateTint="@color/main"
         android:indeterminateTintMode="src_in"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imagesRecyclerview"
         app:layout_constraintEnd_toEndOf="@+id/imagesRecyclerview"
         app:layout_constraintStart_toStartOf="@+id/imagesRecyclerview"

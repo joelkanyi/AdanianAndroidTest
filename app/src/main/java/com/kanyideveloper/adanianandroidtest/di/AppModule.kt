@@ -2,7 +2,6 @@ package com.kanyideveloper.adanianandroidtest.di
 
 import android.app.Application
 import androidx.room.Room
-import com.kanyideveloper.adanianandroidtest.data.local.ImageDao
 import com.kanyideveloper.adanianandroidtest.data.local.ImageDatabase
 import com.kanyideveloper.adanianandroidtest.data.remote.PixabayApi
 import com.kanyideveloper.adanianandroidtest.data.repository.ImageRepository
