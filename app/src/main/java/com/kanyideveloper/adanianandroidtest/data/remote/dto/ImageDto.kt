@@ -28,7 +28,7 @@ data class ImageDto(
     val webformatWidth: Int
 ){
 
-    // Mapper function to map the data to our model
+    // Mapper function to map the data to our `Image` entity
     fun toImageEntity(): ImageEntity {
          return ImageEntity(
              collections = collections,

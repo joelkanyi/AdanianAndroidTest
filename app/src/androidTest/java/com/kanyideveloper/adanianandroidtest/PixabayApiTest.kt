@@ -4,7 +4,6 @@ import android.content.Context
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.platform.app.InstrumentationRegistry
 import com.kanyideveloper.adanianandroidtest.data.remote.PixabayApi
-import com.kanyideveloper.adanianandroidtest.data.remote.dto.ImageDto
 import kotlinx.coroutines.runBlocking
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
