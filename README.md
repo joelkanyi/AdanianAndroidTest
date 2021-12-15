@@ -12,7 +12,7 @@ Clean Architecture combines a group of practices that produce systems with the f
 
 The following scheme presents the architecture from the UI to the backend or database:
 
-<p align="center"><img src="assets/architecture.png" alt="Clean Architecture Diagram"></p>
+<p align="center"><img src="screenshots/clean_arch.png" alt="Clean Architecture Diagram"></p>
 
 As you can see in the image, an Android application with Clean Architecture gathers the layers into three modules:
 1. Presentation - presents data to a screen and handle user interactions.
@@ -60,4 +60,4 @@ Sign up for the API key  on the following Link https://pixabay.com/api/docs/#api
 ## Screenshots
 These are the app's screenshots:
 
-<img src="assets/img1.png" width="250"/><img src="assets/img1.1.png" width="250"/> 
+<img src="screenshots/demo1.png" width="250"/><img src="screenshots/demo2.1.png" width="250"/> 
