@@ -60,4 +60,4 @@ Sign up for the API key  on the following Link https://pixabay.com/api/docs/#api
 ## Screenshots
 These are the app's screenshots:
 
-<img src="screenshots/demo1.png" width="250"/><img src="screenshots/demo2.1.png" width="250"/> 
+<img src="screenshots/demo1.png" width="250"/><img src="screenshots/demo2.png" width="250"/> 
