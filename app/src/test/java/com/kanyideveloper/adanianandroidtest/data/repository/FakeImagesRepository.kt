@@ -1,11 +1,12 @@
 package com.kanyideveloper.adanianandroidtest.data.repository
 
 import com.kanyideveloper.adanianandroidtest.domain.model.Image
+import com.kanyideveloper.adanianandroidtest.domain.repository.ImageRepository
 import com.kanyideveloper.adanianandroidtest.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
-class FakeImagesRepository : ImageRepository  {
+class FakeImagesRepository : ImageRepository {
 
     private val images = mutableListOf<Image>()
 
