@@ -4,9 +4,9 @@ import android.app.Application
 import androidx.room.Room
 import com.kanyideveloper.adanianandroidtest.data.local.ImageDatabase
 import com.kanyideveloper.adanianandroidtest.data.remote.PixabayApi
-import com.kanyideveloper.adanianandroidtest.data.repository.ImageRepository
+import com.kanyideveloper.adanianandroidtest.domain.repository.ImageRepository
 import com.kanyideveloper.adanianandroidtest.data.util.Constants.BASE_URL
-import com.kanyideveloper.adanianandroidtest.domain.repository.ImageRepositoryImpl
+import com.kanyideveloper.adanianandroidtest.data.repository.ImageRepositoryImpl
 import com.kanyideveloper.adanianandroidtest.domain.use_case.GetImages
 import dagger.Module
 import dagger.Provides

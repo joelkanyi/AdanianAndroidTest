@@ -49,7 +49,7 @@ class ImagesFragment : Fragment() {
 
     private fun setUpObserver(searchString: String) {
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
-            viewModel.onSearch(searchString).collect { result ->
+            viewModel.onSearch(searchString.trim()).collect { result ->
                 when (result) {
                     is Resource.Success -> {
                         binding.imagesProgressBar.isVisible = false

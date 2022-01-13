@@ -1,9 +1,9 @@
-package com.kanyideveloper.adanianandroidtest.domain.repository
+package com.kanyideveloper.adanianandroidtest.data.repository
 
 import com.kanyideveloper.adanianandroidtest.data.local.ImageDao
 import com.kanyideveloper.adanianandroidtest.data.remote.PixabayApi
-import com.kanyideveloper.adanianandroidtest.data.repository.ImageRepository
 import com.kanyideveloper.adanianandroidtest.domain.model.Image
+import com.kanyideveloper.adanianandroidtest.domain.repository.ImageRepository
 import com.kanyideveloper.adanianandroidtest.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
